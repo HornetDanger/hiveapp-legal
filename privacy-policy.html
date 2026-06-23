@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HiveappROS — Gizlilik Politikası</title>
+    <meta
+      name="description"
+      content="HiveappROS personel mobil uygulaması gizlilik politikası ve KVKK aydınlatma metni."
+    />
+    <style>
+      :root {
+        --primary: #f26419;
+        --ink: #1f2430;
+        --muted: #5d5e5f;
+        --bg: #f9f7f2;
+        --card: #ffffff;
+        --border: #e7e2d8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Inter, Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+      }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+      header {
+        display: flex; align-items: center; gap: 14px;
+        padding-bottom: 20px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+      }
+      .logo {
+        width: 48px; height: 48px; border-radius: 12px; flex: none;
+        background: var(--primary); display: grid; place-items: center;
+        color: #fff; font-weight: 800; font-size: 24px;
+      }
+      h1 { font-size: 26px; margin: 0; }
+      .sub { color: var(--muted); font-size: 14px; margin-top: 2px; }
+      h2 { font-size: 19px; margin: 34px 0 10px; }
+      p, li { font-size: 15.5px; color: #2c3240; }
+      a { color: var(--primary); }
+      .card {
+        background: var(--card); border: 1px solid var(--border);
+        border-radius: 14px; padding: 18px 20px; margin: 14px 0;
+      }
+      table { width: 100%; border-collapse: collapse; margin: 10px 0 4px; }
+      th, td {
+        text-align: left; padding: 10px 12px; font-size: 14.5px;
+        border-bottom: 1px solid var(--border); vertical-align: top;
+      }
+      th { color: var(--muted); font-weight: 600; }
+      .meta { color: var(--muted); font-size: 13.5px; }
+      footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">H</div>
+        <div>
+          <h1>HiveappROS — Gizlilik Politikası</h1>
+          <div class="sub">
+            Personel mobil uygulaması · Son güncelleme: 16 Haziran 2026
+          </div>
+        </div>
+      </header>
+
+      <p>
+        Bu gizlilik politikası, <strong>HiveappROS</strong> personel mobil
+        uygulamasını ("Uygulama") kullandığınızda hangi kişisel verilerin
+        işlendiğini, neden işlendiğini ve haklarınızı açıklar. Uygulama,
+        restoran/işletme çalışanlarının vardiya, devam takibi (giriş-çıkış),
+        profil ve telefondan POS işlemlerini yürütmesi için tasarlanmıştır.
+        Veriler 6698 sayılı KVKK'ya uygun olarak işlenir.
+      </p>
+
+      <h2>1. Veri Sorumlusu</h2>
+      <div class="card">
+        <p style="margin:0">
+          <strong>Hornetdanger Labs</strong> — HiveappROS<br />
+          İletişim: <a href="mailto:privacy@hiveapp.io">privacy@hiveapp.io</a>
+        </p>
+      </div>
+
+      <h2>2. Topladığımız Veriler ve Amaçları</h2>
+      <table>
+        <thead>
+          <tr><th>Veri</th><th>Neden</th><th>İzin</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hesap bilgileri (e-posta, ad, rol, departman)</td>
+            <td>Kimlik doğrulama ve uygulamaya giriş</td>
+            <td>İşveren tarafından oluşturulur</td>
+          </tr>
+          <tr>
+            <td>Konum (GPS)</td>
+            <td>
+              Vardiya giriş/çıkışında işyeri konumunun (geofence) doğrulanması
+            </td>
+            <td>Konum izni (yalnızca kullanım sırasında)</td>
+          </tr>
+          <tr>
+            <td>Kamera</td>
+            <td>Devam takibi için işyerindeki QR kodunun okutulması</td>
+            <td>Kamera izni</td>
+          </tr>
+          <tr>
+            <td>Cihaz bildirim jetonu (push token)</td>
+            <td>Duyuru ve vardiya bildirimlerinin gönderilmesi</td>
+            <td>Bildirim izni</td>
+          </tr>
+          <tr>
+            <td>Kullanım ve hata verileri</td>
+            <td>Uygulama kararlılığı ve iyileştirme (çökme/analitik)</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="meta">
+        Uygulama; reklam amaçlı veri toplamaz, kişisel verilerinizi satmaz.
+      </p>
+
+      <h2>3. Verilerin Paylaşıldığı Üçüncü Taraflar</h2>
+      <ul>
+        <li>
+          <strong>İşvereniniz (işletme):</strong> vardiya, devam ve profil
+          verileriniz, bağlı olduğunuz işletmenin yöneticileri tarafından
+          görüntülenir.
+        </li>
+        <li>
+          <strong>Expo (push bildirim altyapısı):</strong> bildirim göndermek
+          için cihaz jetonu işlenir.
+        </li>
+        <li>
+          <strong>Hata/analitik sağlayıcıları (Sentry, PostHog):</strong>
+          çökme ve kullanım verileri uygulamayı iyileştirmek için işlenir.
+        </li>
+      </ul>
+      <p class="meta">
+        Bu sağlayıcılarla yalnızca hizmetin gerektirdiği asgari veri paylaşılır.
+      </p>
+
+      <h2>4. Saklama Süresi</h2>
+      <p>
+        Kişisel veriler, çalışma ilişkisi ve yasal yükümlülüklerin gerektirdiği
+        süre boyunca saklanır; bu sürenin sonunda silinir veya anonimleştirilir.
+        Devam/vardiya kayıtları ilgili iş mevzuatı uyarınca saklanabilir.
+      </p>
+
+      <h2>5. Haklarınız (KVKK md. 11)</h2>
+      <p>
+        Kişisel verilerinizin işlenip işlenmediğini öğrenme, düzeltme, silme,
+        işlemeye itiraz etme ve aktarıldığı tarafları öğrenme haklarına
+        sahipsiniz. Talepleriniz için
+        <a href="mailto:privacy@hiveapp.io">privacy@hiveapp.io</a> adresine
+        başvurabilirsiniz.
+      </p>
+
+      <h2>6. Veri Güvenliği</h2>
+      <p>
+        Veriler aktarımda şifreli bağlantı (HTTPS) ile korunur; oturum jetonları
+        cihazda güvenli depolama (Keychain/Keystore) içinde tutulur.
+      </p>
+
+      <h2>7. Çocukların Gizliliği</h2>
+      <p>
+        Uygulama işyeri kullanımına yöneliktir ve 16 yaş altı kişilere yönelik
+        değildir; bilerek bu yaş altından veri toplamayız.
+      </p>
+
+      <h2>8. Değişiklikler</h2>
+      <p>
+        Bu politikada değişiklik yapıldığında güncel sürüm bu sayfada
+        yayımlanır ve "son güncelleme" tarihi değiştirilir.
+      </p>
+
+      <footer>
+        © 2026 Hornetdanger Labs — HiveappROS. Tüm hakları saklıdır.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HiveappROS Personel — Hesap ve Veri Silme Talebi</title>
+    <meta
+      name="description"
+      content="HiveappROS Personel uygulamasında hesabınızın ve kişisel verilerinizin silinmesini nasıl talep edeceğiniz; hangi verilerin silindiği, hangilerinin yasal olarak saklandığı."
+    />
+    <style>
+      :root {
+        --primary: #f26419;
+        --ink: #1f2430;
+        --muted: #5d5e5f;
+        --bg: #f9f7f2;
+        --card: #ffffff;
+        --border: #e7e2d8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Inter, Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+      }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+      header { border-bottom: 3px solid var(--primary); padding-bottom: 16px; margin-bottom: 28px; }
+      h1 { font-size: 26px; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 15px; margin: 0; }
+      h2 { font-size: 19px; margin: 32px 0 10px; }
+      section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+      ol, ul { padding-left: 20px; }
+      li { margin: 6px 0; }
+      table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 15px; }
+      th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+      th { color: var(--muted); font-weight: 600; }
+      a { color: var(--primary); }
+      .note { background: #fff7f2; border: 1px solid #f6d2bd; border-radius: 10px; padding: 14px 16px; font-size: 15px; }
+      footer { margin-top: 36px; color: var(--muted); font-size: 14px; text-align: center; }
+      code { background: #f1ede5; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Hesap ve Veri Silme Talebi</h1>
+        <p class="sub">
+          HiveappROS Personel uygulaması — Hornetdanger Labs Bilişim Teknolojileri LTD ŞTİ
+        </p>
+      </header>
+
+      <section>
+        <p>
+          Bu sayfa, <strong>HiveappROS Personel</strong> uygulamasındaki hesabınızın
+          ve kişisel verilerinizin silinmesini nasıl talep edeceğinizi; hangi
+          verilerin silindiğini, hangilerinin yasal zorunluluk nedeniyle
+          saklandığını açıklar.
+        </p>
+        <p>
+          Uygulama, çalıştığınız işletme tarafından kullanılan bir personel
+          uygulamasıdır. Verileriniz işletmeniz adına işlenir; bu nedenle silme
+          talebiniz işletmenize de iletilir.
+        </p>
+      </section>
+
+      <h2>Silme talebi nasıl yapılır?</h2>
+      <section>
+        <p>İki yoldan biriyle talep edebilirsiniz:</p>
+        <ol>
+          <li>
+            <strong>E-posta ile:</strong> Uygulamada kayıtlı e-posta adresinizden
+            <a href="mailto:privacy@hiveapp.io">privacy@hiveapp.io</a> adresine
+            yazın. Konu satırına <code>Hesap Silme Talebi</code> yazmanız
+            işlemi hızlandırır. Mesajınızda adınızı ve çalıştığınız işletmeyi
+            belirtin.
+          </li>
+          <li>
+            <strong>İşletmeniz üzerinden:</strong> İşletmenizin yöneticisinden
+            hesabınızın silinmesini isteyebilirsiniz. Yönetici bu işlemi yönetim
+            panelinden gerçekleştirebilir.
+          </li>
+        </ol>
+        <p>
+          Talebiniz, KVKK md. 13 uyarınca <strong>en geç 30 gün içinde</strong>
+          sonuçlandırılır ve size bilgi verilir.
+        </p>
+      </section>
+
+      <h2>Silinen ve saklanan veriler</h2>
+      <section>
+        <table>
+          <tr>
+            <th>Veri</th>
+            <th>Ne olur?</th>
+          </tr>
+          <tr>
+            <td>Uygulama erişimi</td>
+            <td>
+              <strong>Hesap kapatılır</strong>, açık oturumlar anında geçersiz
+              kılınır ve bir daha giriş yapılamaz. E-posta adresi, hesabın
+              kimlik anahtarı olduğu için kayıtta kalır.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kimlik ve iletişim bilgileri: ad-soyad, telefon, adres,
+              T.C. kimlik numarası, doğum tarihi
+            </td>
+            <td><strong>Silinir veya anonimleştirilir.</strong></td>
+          </tr>
+          <tr>
+            <td>Banka bilgisi (IBAN)</td>
+            <td><strong>Silinir.</strong></td>
+          </tr>
+          <tr>
+            <td>Kan grubu ve acil durum kişisi</td>
+            <td><strong>Silinir.</strong></td>
+          </tr>
+          <tr>
+            <td>Profil fotoğrafı ve serbest metin profil alanları (ör. alerji notu)</td>
+            <td>
+              Talebiniz üzerine <strong>işletmeniz tarafından kaldırılır</strong>;
+              silme talebinizde bunları da belirtmenizi öneririz.
+            </td>
+          </tr>
+          <tr>
+            <td>Konum kayıtları (mesai giriş/çıkış doğrulaması)</td>
+            <td>
+              Kimliğinizle ilişkisi kaldırılır; kayıt kişisel bilgi içermeden
+              kalabilir.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Vardiya, devam (giriş-çıkış) ve bordro/ödeme kayıtları
+            </td>
+            <td>
+              <strong>Yasal süre boyunca saklanır</strong> — kişisel
+              bilgilerinizden arındırılmış biçimde. Ayrıntı aşağıda.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <h2>Neden bazı kayıtlar saklanıyor?</h2>
+      <section>
+        <p>
+          Çalışma ilişkisine ait bazı kayıtları saklamak yasal bir
+          zorunluluktur; bu kayıtlar talep üzerine silinemez:
+        </p>
+        <ul>
+          <li>
+            <strong>Özlük, vardiya ve devam kayıtları</strong> — 4857 sayılı
+            İş Kanunu ve sosyal güvenlik mevzuatı uyarınca.
+          </li>
+          <li>
+            <strong>Bordro, ödeme ve finansal kayıtlar</strong> — 213 sayılı
+            Vergi Usul Kanunu ve 6102 sayılı Türk Ticaret Kanunu uyarınca
+            <strong>10 yıl</strong>.
+          </li>
+        </ul>
+        <p>
+          Bu kayıtlar, silme talebinizden sonra <strong>kimliğinizle
+          ilişkilendirilemeyecek biçimde</strong> saklanır: ad, iletişim,
+          kimlik numarası ve benzeri kişisel alanlar kaldırılır. Yasal süre
+          dolduğunda kayıtlar silinir veya kalıcı olarak anonimleştirilir.
+        </p>
+        <div class="note">
+          Hesabınız silindiğinde uygulamaya <strong>artık giriş
+          yapamazsınız</strong>. Bu işlem geri alınamaz; tekrar kullanmak
+          isterseniz işletmeniz sizi yeniden kaydetmelidir.
+        </div>
+      </section>
+
+      <h2>İletişim</h2>
+      <section>
+        <p>
+          <strong>Hornetdanger Labs Bilişim Teknolojileri LTD ŞTİ</strong><br />
+          Talep ve sorularınız: <a href="mailto:privacy@hiveapp.io">privacy@hiveapp.io</a>
+        </p>
+        <p>
+          Kişisel verilerinize ilişkin diğer haklarınız için
+          <a href="./privacy-policy.html">Gizlilik Politikası</a> sayfasına
+          bakabilirsiniz.
+        </p>
+      </section>
+
+      <footer>© 2026 Hornetdanger Labs Bilişim Teknolojileri LTD ŞTİ</footer>
+    </div>
+  </body>
+</html>
